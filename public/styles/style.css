@@ -1,0 +1,145 @@
+/* Home page */
+div .row{
+	text-align: center;
+	overflow-y:scroll; 
+	padding: 5px !important; 
+	height: 600px;
+}
+a,a:visited, a:active, a:hover, a:link{
+	text-decoration: none !important;
+	background-color: transparent !important;
+}
+.header{
+	min-height: 120px;
+	height: auto;
+	margin: 0 auto !important;
+	padding: 40px 20px;
+	background-color: rgba(0,0,0,0.6);
+	width: 100% !important;
+}
+
+.colors .col-sm-3{
+	padding: 15px !important; 
+	margin: 0 auto!important; 
+	position: relative;
+}
+.colors .col-sm-3:hover{
+    -moz-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+    -webkit-transition: all .2s ease-in;
+    transition: all .2s ease-in;
+    opacity: 0.6;
+    -webkit-transform:scale(1.1); /* Safari and Chrome */
+    -moz-transform:scale(1.1); /* Firefox */
+    -ms-transform:scale(1.1); /* IE 9 */
+    -o-transform:scale(1.1); /* Opera */
+     transform:scale(1.1);
+}
+.colors .col-sm-3:hover .each_color{
+	border: 3px solid black;
+}
+
+.col-sm-3  span{
+	display: block;
+	width: 70% !important;
+	height: 50px;
+	padding: 10px;
+	margin: 0 auto;
+	width:100%;
+	color: #000;
+	font-weight: bold;
+	font-size: 24px;
+	position: relative;
+	top: 100%;
+	background-color: #fff;
+	transform: translateY(-120%); 
+	pointer-events: none;
+}
+
+.col-sm-3 div i{
+	background-color: #ccc;
+	color: #000;
+	font-style: normal;
+
+}
+.each_color{
+	height: 250px;
+	width:100%;
+}
+.form-inline > * {
+   margin:0px 5px;
+}
+select{
+	height: 35px;
+}
+label{
+	color: #fff;
+	padding: 5px;
+}
+.btn-warning{
+	margin-right: 10px !important;
+}
+
+.middle {
+  transition: .5s ease;
+  z-index: 5;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
+.col-sm-3:hover .middle {
+  opacity: 1;
+}
+.text {
+  background-color: #ccc;
+  color: #000;
+  font-size: 16px;
+  padding: 16px 32px;
+  font-weight: bold;
+}
+
+.footer{
+	min-height: 100px !important;
+	height: auto;
+	margin: 0 auto !important;
+	padding: 20px 20px;
+	background-color: rgba(0,0,0,0.4);
+	left: 0;	width: 100% !important;
+
+} /* end of home page */
+
+
+/* detail page */
+.well{
+	height: 70vh !important;
+	width: 80% !important;
+	margin: 20px auto;
+}
+.btn-default{
+	margin-left: 10px !important;
+}
+
+/*preference page*/
+.preference{
+	background-color: transparent;
+	margin: 0 auto;
+	width: 80%;
+	text-align: center;
+}
+.preference h3{
+	padding: 10px;
+	margin: 10px;
+}
+
+
+
+
+
+
+
+
+
+
