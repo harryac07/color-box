@@ -1,13 +1,7 @@
 import React,{Component} from 'react';
 import allColors from '../colors';
-class Form extends Component{
-	constructor(props){
-		super(props);
-		this.state={
-			colorAdded : false
-		}
 
-	}
+class Form extends Component{
 	handleFormSubmit=(e)=>{
 		const id=this.props.colors.length+1;
 		const colorName = this.refs.name.value;
@@ -20,7 +14,7 @@ class Form extends Component{
 	            <div className="form-group">
 	            	<label><strong>SELECT COLOR</strong></label>
 				  	<select className="form-control" ref="name">
-				  		<option selected="selected">Black</option>
+				  		<option defaultValue="Black">Black</option>
 				  	{
 					    allColors().map((color,i)=>{
 					    	return (<option key={color['name']}>{color['name']}</option>);

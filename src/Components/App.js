@@ -1,6 +1,4 @@
 import React,{Component} from 'react';
-import ColorLists from './Color_lists';
-import ColorDetail from './Color_detail';
 import colors from '../colors';
 
 class App extends Component{
@@ -10,8 +8,6 @@ class App extends Component{
             colors : colors()
 		};
 	}
-
-
 	render(){
         var children = React.Children.map(
            this.props.children,
