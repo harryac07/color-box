@@ -19,11 +19,13 @@ class Preference extends Component{
 	}
 	render(){
 		return(
-			<div className="container-fluid">
+			<div>
 				<div className="header">
-					<Link to="/"><button className="btn btn-primary pull-xs-left">Home <i className="fa fa-home" aria-hidden="true"></i></button></Link>
+					<Link to="/"><button className="btn btn-primary">Home <i className="fa fa-home" aria-hidden="true"></i></button></Link>
 					<Link to={"/id/"+this.props.params.id+"?color="+this.state.selectedColor} >
-						<button className="btn btn-success pull-xs-right">Go Back</button>
+						<button className="btn btn-info">
+							Go Back <i className="fa fa-arrow-left" aria-hidden="true"></i>
+						</button>
 					</Link>
 				</div>
 				<div className="jumbotron">

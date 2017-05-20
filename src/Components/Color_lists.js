@@ -45,7 +45,7 @@ class ColorLists extends Component{
                 addColor:false
             });      
 
-            e.target.innerHTML="<span>SELECTED</span>"; 
+            e.target.innerHTML="<span>selected</span>"; 
         }else{
 
             var filteredSelection = this.state.selected.filter(function(colorObj) {
@@ -127,14 +127,14 @@ class ColorLists extends Component{
 
 	render(){
 		return(
-			<div className="container-fluid">
+			<div>
                 <div className="header">
-                    <button className="btn btn-primary pull-xs-left" onClick={this.renderForm}>
+                    <button className="btn btn-primary pull-md-left" onClick={this.renderForm}>
                         Add Color <i className="fa fa-plus" aria-hidden="true"></i>
                     </button>
-                    <button className="btn btn-danger pull-xs-right" onClick={(e)=>this.handleDelete()}>Delete Color</button>
+                    <button className="btn btn-danger pull-md-left" onClick={(e)=>this.handleDelete()}>Delete Color</button>
                     { this.state.unselect ?
-                        <button className="btn btn-warning pull-xs-right" onClick={(e)=>this.removeSelect(e)}>Unselect all</button>
+                        <button className="btn btn-warning pull-md-left" onClick={(e)=>this.removeSelect(e)}>Unselect all</button>
                         : null
                     }
                     { this.state.addColor ? <Form bringColor={this.addColor} colors={this.props.colors} /> : null }

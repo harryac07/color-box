@@ -18,7 +18,7 @@ class App extends Component{
 	        )
         );
 		return(
-			<div>
+			<div className="container-fluid">
 				{children}
 			</div>
 		);

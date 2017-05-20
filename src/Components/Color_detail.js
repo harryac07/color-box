@@ -30,19 +30,19 @@ class ColorDetail extends Component{
 
 	render(){
 		return(
-			<div className="container-fluid">
+			<div>
 				<div className="header">
 					<Link to="/">
-						<button className="btn btn-primary pull-xs-left home_button">
+						<button className="btn btn-primary home_button pull-md-left">
 							Home <i className="fa fa-home" aria-hidden="true"></i>
 						</button>
 					</Link>
 					<Link to={"/preference/id/"+this.props.params.id}>
-						<button className="btn btn-default pull-xs-right">
+						<button className="btn btn-default pull-md-left">
 							Preferences <i className="fa fa-cog" aria-hidden="true"></i>
 						</button>
 					</Link>
-					<button className="btn btn-danger pull-xs-right" onClick={this.renderForm}>Change Color</button>
+					<button className="btn btn-danger pull-md-left" onClick={this.renderForm}>Change Color</button>
 					{
 						this.state.changeColor ?
 							<Form bringColor={this.onChangeColor} colors={this.props.colors} />
@@ -54,7 +54,7 @@ class ColorDetail extends Component{
                         <div className="display_home_link">Go Home <i className="fa fa-home" aria-hidden="true"></i></div>
                     </Link>
 				</div>
-				<h3 className="text-xs-center">The color is {this.props.location.query.color}</h3>
+				<h3 className="text-xs-center detail_page_footer">The color is {this.props.location.query.color}</h3>
 			</div>
 		);
 	}
